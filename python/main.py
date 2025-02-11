@@ -1,5 +1,4 @@
 from authentication import authenticate
-from data_storage import get_encrypted_flag
 from network_service import start_network_service
 
 if __name__ == "__main__":

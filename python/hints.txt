@@ -1,0 +1,3 @@
+Encrypted password: Y29tcGxleF9wYXNzd29yZA==
+
+key=complex_network_key

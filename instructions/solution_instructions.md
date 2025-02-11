@@ -32,22 +32,8 @@ This guide provides step-by-step instructions to solve the CTF challenge.
 
 - Send a POST request with the correct key:
   ```bash
-  curl -X POST -F "key=complex_network_key" http://localhost:5000/flag
+  curl -X POST http://127.0.0.1:5000/flag -d "key=complex_network_key"
   ```
-- Response: `CTF{this_is_the_flag}`
-
-## 5. **Decrypt the Flag (Optional)**
-
-- If exploring `data_storage.py`, locate the encrypted flag and the key used for encryption:
-  ```python
-  key = b'examplegeneratedkeyyourskeyhere=='
-  ```
-- Use the key to decrypt the encrypted flag using Python:
-  ```python
-  from cryptography.fernet import Fernet
-  cipher = Fernet(b'examplegeneratedkeyyourskeyhere==')
-  encrypted_flag = b'...'  # Replace with the actual encrypted flag
-  print(cipher.decrypt(encrypted_flag).decode())
-  ```
+- Response: `CTF220s{Här har du flaggan!}`
 
 Congratulations! You have successfully solved the challenge.
