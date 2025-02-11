@@ -3,6 +3,6 @@ def authenticate():
     hardcoded_password = "Y29tcGxleF9wYXNzd29yZA=="  # Base64 encoded string
     import base64
     decoded_password = base64.b64decode(hardcoded_password).decode()
-    if password == hardcoded_password: ##hwuhwsgcwucduochdohdovchduovhwfuvhwdhwdhwodhodwchowdbcja
+    if password == decoded_password:
         return True
     return False
